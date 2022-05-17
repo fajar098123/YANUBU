@@ -41,6 +41,8 @@
 
     @yield('content')
 
+    @include('layouts.footer')
+
 </body>
 
   <!-- Vendor JS Files -->

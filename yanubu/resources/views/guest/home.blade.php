@@ -5,27 +5,178 @@
     <section id="hero" class="d-flex align-items-center">
 
         <div class="container">
-          <div class="d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-            <h1>Selamat Datang</h1>
-            <h2 class="col-lg-5 d-flex flex-column">di Website <span>Yayasan Nurul Burhan</span> Bondowoso</h2>
-            <div class="d-flex justify-content-center">
-              <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-sosmed"><i class="bx bxl-instagram-alt"></i><span>yayasan_nurul_burhan</span></a>
-              <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-sosmed"><i class='bx bxl-youtube'></i><span>Yayasan Nurul Burhan</span></a>
-              <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-sosmed"><i class='bx bxl-facebook-square'></i><span>Yayasan Nurul Burhan</span></a>
+            <div class="d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up"
+                data-aos-delay="200">
+                <h1>Selamat Datang</h1>
+                <h2 class="col-lg-5 d-flex flex-column">di Website <span>Yayasan Nurul Burhan</span> Bondowoso</h2>
+                <div class="d-flex justify-content-center">
+                    <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-sosmed"><i
+                            class="bx bxl-instagram-alt"></i><span>yayasan_nurul_burhan</span></a>
+                    <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-sosmed"><i
+                            class='bx bxl-youtube'></i><span>Yayasan Nurul Burhan</span></a>
+                    <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-sosmed"><i
+                            class='bx bxl-facebook-square'></i><span>Yayasan Nurul Burhan</span></a>
+                </div>
             </div>
-          </div>
         </div>
 
-      </section>
-      <!-- End Hero -->
+    </section>
+    <!-- End Hero -->
 
-      <section id="artikel" class="d-flex align-items-center">
-          
+    <!-- ======= Profile Section ======= -->
+
+    <section class="wrapper">
         <div class="container">
-          <div class="d-flex justify-content-between">
-            <div class="title-section"><h1>ARTIKEL</h1></div>
-            <div class="read-more d-flex align-items-center"><a class="btn-read-more" href="#"><h5 class="d-inline">Baca Selengkapnya</h5><i class='bx bxs-chevron-right bx-xs'></i></a></div>
-          </div>
+
+            <div class="row">
+                <div class="col-md-3 pb-2">
+                    <div class="card text-white card-has-bg click-col  shadow"
+                        style="background-image: url('/assets/img/img1.png')">
+                        <div class="card-img-overlay d-flex flex-column">
+                            <div class="card-body">
+                                <h4 class="card-title mt-0 "><a class="text-white" herf="#">PPI PUTRA - NURUL BURHAN</a>
+                                </h4>
+                                <p class="card-meta mb-2">Untuk Info lebih lengkap terkait PPI PUTRA - NURUL BURHAN dapat di
+                                    lihat di sini</p>
+                                <a class="" href="#">
+                                    <h5 class="d-inline">Baca Selengkapnya</h5><i
+                                        class='bx bxs-chevron-right bx-xs'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 pb-2">
+                    <div class="card text-white card-has-bg click-col shadow"
+                        style="background-image: url('/assets/img/img2.png')">
+                        <div class="card-img-overlay d-flex flex-column">
+                            <div class="card-body">
+                                <h4 class="card-title mt-0 "><a class="text-white" herf="#">PPI PUTRA - NURUL BURHAN</a>
+                                </h4>
+                                <p class="card-meta mb-2">Untuk Info lebih lengkap terkait PPI PUTRA - NURUL BURHAN dapat di
+                                    lihat di sini</p>
+                                <a class="" href="#">
+                                    <h5 class="d-inline">Baca Selengkapnya</h5><i
+                                        class='bx bxs-chevron-right bx-xs'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 pb-2">
+                    <div class="card text-white card-has-bg click-col shadow"
+                        style="background-image: url('/assets/img/img3.png')">
+                        <div class="card-img-overlay d-flex flex-column">
+                            <div class="card-body">
+                                <h4 class="card-title mt-0 "><a class="text-white" herf="#">PPI PUTRA - NURUL BURHAN</a>
+                                </h4>
+                                <p class="card-meta mb-2">Untuk Info lebih lengkap terkait PPI PUTRA - NURUL BURHAN dapat di
+                                    lihat di sini</p>
+                                <a class="" href="#">
+                                    <h5 class="d-inline">Baca Selengkapnya</h5><i
+                                        class='bx bxs-chevron-right bx-xs'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 pb-2">
+                    <div class="card text-white card-has-bg click-col shadow"
+                        style="background-image: url('/assets/img/img4.png')">
+                        <div class="card-img-overlay d-flex flex-column">
+                            <div class="card-body">
+                                <h4 class="card-title mt-0 "><a class="text-white" herf="#">PPI PUTRA - NURUL BURHAN</a>
+                                </h4>
+                                <p class="card-meta mb-2">Untuk Info lebih lengkap terkait PPI PUTRA - NURUL BURHAN dapat di
+                                    lihat di sini</p>
+                                <a class="" href="#">
+                                    <h5 class="d-inline">Baca Selengkapnya</h5><i
+                                        class='bx bxs-chevron-right bx-xs'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
+
+    <!-- ======= Blog Section ======= -->
+
+    <section id="title" class="d-flex align-items-center">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="title-section">
+                    <h1>ARTIKEL</h1>
+                </div>
+                <div class="read-more d-flex align-items-center">
+                    <a class="btn-read-more" href="#">
+                        <h5 class="d-inline">Baca Selengkapnya</h5>
+                        <i class='bx bxs-chevron-right bx-xs'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards-wrapper">
+        <div class="card-grid-space">
+            <a class="card-blog" href="#" style="--bg-img: url('/assets/img/img1.png')">
+                <div>
+                    <h1>HTML Syntax</h1>
+                    <p>The syntax of a language is how it works. How to actually write it. Learn HTML syntax…</p>
+                    <div class="date">6 Oct 2017</div>
+                    <div class="tags">
+                        <div class="tag">HTML</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="card-grid-space">
+            <a class="card-blog" href="#" style="--bg-img: url('/assets/img/img4.png')">
+                <div>
+                    <h1>Basic types of HTML tags</h1>
+                    <p>Learn about some of the most common HTML tags…</p>
+                    <div class="date">9 Oct 2017</div>
+                    <div class="tags">
+                        <div class="tag">HTML</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="card-grid-space">
+            <a class="card-blog" href="#" style="--bg-img: url('/assets/img/img3.png')">
+                <div>
+                    <h1>Links, images and about file paths</h1>
+                    <p>Learn how to use links and images along with file paths…</p>
+                    <div class="date">14 Oct 2017</div>
+                    <div class="tags">
+                        <div class="tag">HTML</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </section>
+
+    <!-- ======= Gallery Section ======= -->
+
+    <section id="title" class="d-flex align-items-center">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="title-section">
+                    <h1>GALERI</h1>
+                </div>
+                <div class="read-more d-flex align-items-center">
+                    <a class="btn-read-more" href="#">
+                        <h5 class="d-inline">Baca Selengkapnya</h5>
+                        <i class='bx bxs-chevron-right bx-xs'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
 @endsection
