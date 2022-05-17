@@ -3,7 +3,7 @@
     <header id="header" class="fixed-top ">
       <div class="container d-flex align-items-center">
 
-        <h1 class="logo me-auto"><a href="index.html"><img src="assets/img/yanubu.png" alt="" class="img-fluid" /></a></h1>
+        <h1 class="logo me-auto"><a href="/"><img src="assets/img/yanubu.png" alt="" class="img-fluid" /></a></h1>
 
         <nav id="navbar" class="navbar">
           <ul>
