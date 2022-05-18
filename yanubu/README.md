@@ -1,5 +1,8 @@
-composer install
+<!-- Instal Composer -->
+#composer install
 
-php artisan migrate
+<!-- Migrate Database -->
+#php artisan migrate
 
-php artisan serve
+<!-- Jalankan Server -->
+#php artisan serve
