@@ -119,7 +119,7 @@
         </div>
     </section>
 
-    <section class="cards-wrapper">
+    <section class="cards-wrapper-blog">
         <div class="card-grid-space">
             <a class="card-blog" href="#" style="--bg-img: url('/assets/img/img1.png')">
                 <div>
@@ -169,7 +169,7 @@
                 </div>
                 <div class="read-more d-flex align-items-center">
                     <a class="btn-read-more" href="#">
-                        <h5 class="d-inline">Baca Selengkapnya</h5>
+                        <h5 class="d-inline">Lihat Selengkapnya</h5>
                         <i class='bx bxs-chevron-right bx-xs'></i>
                     </a>
                 </div>
@@ -177,6 +177,101 @@
         </div>
     </section>
 
+    <section class="cards-wrapper-gallery">
+        <div class="card-grid-space">
+            <a class="card-gallery" href="#" style="--bg-img: url('/assets/img/img1.png')">
+                <div>
+                    <h6>HTML Syntax</h6>
+                </div>
+            </a>
+        </div>
+        <div class="card-grid-space">
+            <a class="card-gallery" href="#" style="--bg-img: url('/assets/img/img4.png')">
+                <div>
+                    <h6>Basic types of HTML tags</h6>
+                </div>
+            </a>
+        </div>
+        <div class="card-grid-space">
+            <a class="card-gallery" href="#" style="--bg-img: url('/assets/img/img3.png')">
+                <div>
+                    <h6>Links, images and about file paths</h6>
+                </div>
+            </a>
+        </div>
+        <div class="card-grid-space">
+            <a class="card-gallery" href="#" style="--bg-img: url('/assets/img/img4.png')">
+                <div>
+                    <h6>Basic types of HTML tags</h6>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="youtube">
+        <div class="container">
+            <div class="row m-2">
+                <div class="col-md-8">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6P0IHXfU3ps"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-md-4">
+                    <h4>
+                        Official Youtube Channel Yayasan Nurul Burhan
+                    </h4>
+                    <hr>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="title" class="d-flex align-items-center">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="title-section">
+                    <h1>TESTIMONI</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-caption">
+                        <p>If Shai Reznik's TDD videos don't convince you to add automated testing your code,
+                            I don't know what will.This was the very best explanation of frameworks for brginners
+                            that I've ever seen.
+                        </p>
+                        <img src="/assets/img/testi1.jpeg">
+                        <div id="image-caption">Nick Doe</div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption">
+                        <p>If Shai Reznik's TDD videos don't convince you to add automated testing your code,
+                            I don't know what will.This was the very best explanation of frameworks for brginners
+                            that I've ever seen.</p>
+                        <img src="/assets/img/testi1.jpeg" class="img-fluid">
+                        <div id="image-caption">Cromption Greves</div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption">
+                        <p>If Shai Reznik's TDD videos don't convince you to add automated testing your code,
+                            I don't know what will.This was the very best explanation of frameworks for brginners
+                            that I've ever seen.</p>
+                        <img src="/assets/img/testi1.jpeg" class="img-fluid">
+                        <div id="image-caption">Harry Mon</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 @endsection
