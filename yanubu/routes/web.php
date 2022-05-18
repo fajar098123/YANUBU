@@ -18,3 +18,9 @@ Route::get('/', function () {
 });
 
 Route::view('fasilitas', 'guest.fasilitas');
+
+Route::view('kontak', 'guest.kontak');
+
+Route::view('galeri', 'guest.galeri');
+
+Route::view('artikel', 'guest.artikel');

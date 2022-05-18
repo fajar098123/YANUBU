@@ -16,11 +16,11 @@
               </ul>
             </li>
             <li><a class="nav-link scrollto" href="/fasilitas">Fasilitas</a></li>
-            <li><a class="nav-link scrollto" href="#services">Galeri</a></li>
-            <li><a class="nav-link scrollto" href="#portfolio">Artikel</a></li>
+            <li><a class="nav-link scrollto" href="/galeri">Galeri</a></li>
+            <li><a class="nav-link scrollto" href="/artikel">Artikel</a></li>
             <li class="dropdown"><a href="#"><span>Download</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
-                <li><a href="#">Brosur Pendaftaran</a></li>
+                <li><a href="#"><span>Brosur Pendaftaran</span><i class='bx bxs-download bx-sm mt-1'></i></a></li>
                 <li class="dropdown"><a href="#"><span>Formulir Pendaftaran</span> <i class="bi bi-chevron-right"></i></a>
                   <ul>
                     <li><a href="#">Deep Drop Down 1</a></li>
@@ -31,7 +31,7 @@
                 </li>
               </ul>
             </li>
-            <li><a class="nav-link scrollto" href="#contact">Kontak</a></li>
+            <li><a class="nav-link scrollto" href="/kontak">Kontak</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
