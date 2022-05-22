@@ -156,7 +156,18 @@
                 </div>
             </a>
         </div>
-
+        <div class="card-grid-space">
+            <a class="card-blog" href="#" style="--bg-img: url('/assets/img/img4.png')">
+                <div>
+                    <h1>Basic types of HTML tags</h1>
+                    <p>Learn about some of the most common HTML tags…</p>
+                    <div class="date">9 Oct 2017</div>
+                    <div class="tags">
+                        <div class="tag">HTML</div>
+                    </div>
+                </div>
+            </a>
+        </div>
     </section>
 
     <!-- ======= Gallery Section ======= -->
