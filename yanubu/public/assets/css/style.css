@@ -102,7 +102,7 @@ body {
   width: 100%;
   border-radius: 0;
   position: relative;
-  -webkit-box-shadow: 2px 4px 4px 3px rgba(0,0,0,0.24); 
+  -webkit-box-shadow: 2px 4px 4px 3px rgba(0,0,0,0.24);
   box-shadow: 2px 4px 4px 3px rgba(0,0,0,0.24);
 }
 
@@ -716,8 +716,8 @@ body {
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
     padding: 2em 4rem;
     margin: 0 auto;
     width: max-content;
@@ -727,11 +727,11 @@ body {
     font-family: 'Heebo';
     --bg-filter-opacity: 0.4;
     background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
-    height: 10em;
-    width: 15em;
+    height: 14em;
+    width: 11em;
     font-size: 1.5em;
     color: white;
-    border-radius: .5em;
+    border-radius: .2em;
     padding: 1em;
     /*margin: 2em;*/
     display: flex;
