@@ -31,7 +31,7 @@
             <div class="row">
                 <div class="col-md-3 pb-2">
                     <div class="card text-white card-has-bg click-col  shadow"
-                        style="background-image: url('/assets/img/img1.png')">
+                        style="background-image: url({{asset('assets/img/img1.png')}})">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="card-body">
                                 <h4 class="card-title mt-0 "><a class="text-white" herf="#">PPI PUTRA - NURUL BURHAN</a>
@@ -48,7 +48,7 @@
                 </div>
                 <div class="col-md-3 pb-2">
                     <div class="card text-white card-has-bg click-col shadow"
-                        style="background-image: url('/assets/img/img2.png')">
+                        style="background-image: url({{asset('assets/img/img2.png')}})">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="card-body">
                                 <h4 class="card-title mt-0 "><a class="text-white" herf="#">PPI PUTRA - NURUL BURHAN</a>
@@ -65,7 +65,7 @@
                 </div>
                 <div class="col-md-3 pb-2">
                     <div class="card text-white card-has-bg click-col shadow"
-                        style="background-image: url('/assets/img/img3.png')">
+                        style="background-image: url({{asset('assets/img/img3.png')}})">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="card-body">
                                 <h4 class="card-title mt-0 "><a class="text-white" herf="#">PPI PUTRA - NURUL BURHAN</a>
@@ -82,7 +82,7 @@
                 </div>
                 <div class="col-md-3 pb-2">
                     <div class="card text-white card-has-bg click-col shadow"
-                        style="background-image: url('/assets/img/img4.png')">
+                        style="background-image: url('{{asset('assets/img/img4.png')}}')">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="card-body">
                                 <h4 class="card-title mt-0 "><a class="text-white" herf="#">PPI PUTRA - NURUL BURHAN</a>
@@ -121,7 +121,7 @@
 
     <section class="cards-wrapper-blog">
         <div class="card-grid-space">
-            <a class="card-blog" href="#" style="--bg-img: url('/assets/img/img1.png')">
+            <a class="card-blog" href="#" style="--bg-img: url({{asset('assets/img/img1.png')}})">
                 <div>
                     <h1>HTML Syntax</h1>
                     <p>The syntax of a language is how it works. How to actually write it. Learn HTML syntax…</p>
@@ -133,7 +133,7 @@
             </a>
         </div>
         <div class="card-grid-space">
-            <a class="card-blog" href="#" style="--bg-img: url('/assets/img/img4.png')">
+            <a class="card-blog" href="#" style="--bg-img: url({{asset('assets/img/img2.png')}})">
                 <div>
                     <h1>Basic types of HTML tags</h1>
                     <p>Learn about some of the most common HTML tags…</p>
@@ -145,7 +145,7 @@
             </a>
         </div>
         <div class="card-grid-space">
-            <a class="card-blog" href="#" style="--bg-img: url('/assets/img/img3.png')">
+            <a class="card-blog" href="#" style="--bg-img: url({{asset('assets/img/img3.png')}})">
                 <div>
                     <h1>Links, images and about file paths</h1>
                     <p>Learn how to use links and images along with file paths…</p>
@@ -157,7 +157,7 @@
             </a>
         </div>
         <div class="card-grid-space">
-            <a class="card-blog" href="#" style="--bg-img: url('/assets/img/img4.png')">
+            <a class="card-blog" href="#" style="--bg-img: url({{asset('assets/img/img4.png')}})">
                 <div>
                     <h1>Basic types of HTML tags</h1>
                     <p>Learn about some of the most common HTML tags…</p>
@@ -190,28 +190,28 @@
 
     <section class="cards-wrapper-gallery">
         <div class="card-grid-space">
-            <a class="card-gallery" href="#" style="--bg-img: url('/assets/img/img1.png')">
+            <a class="card-gallery" href="#" style="--bg-img: url({{asset('assets/img/img1.png')}})">
                 <div>
                     <h6>HTML Syntax</h6>
                 </div>
             </a>
         </div>
         <div class="card-grid-space">
-            <a class="card-gallery" href="#" style="--bg-img: url('/assets/img/img4.png')">
+            <a class="card-gallery" href="#" style="--bg-img: url({{asset('assets/img/img2.png')}})">
                 <div>
                     <h6>Basic types of HTML tags</h6>
                 </div>
             </a>
         </div>
         <div class="card-grid-space">
-            <a class="card-gallery" href="#" style="--bg-img: url('/assets/img/img3.png')">
+            <a class="card-gallery" href="#" style="--bg-img: url({{asset('assets/img/img3.png')}})">
                 <div>
                     <h6>Links, images and about file paths</h6>
                 </div>
             </a>
         </div>
         <div class="card-grid-space">
-            <a class="card-gallery" href="#" style="--bg-img: url('/assets/img/img4.png')">
+            <a class="card-gallery" href="#" style="--bg-img: url({{asset('assets/img/img4.png')}})">
                 <div>
                     <h6>Basic types of HTML tags</h6>
                 </div>
@@ -258,7 +258,7 @@
                             I don't know what will.This was the very best explanation of frameworks for brginners
                             that I've ever seen.
                         </p>
-                        <img src="/assets/img/testi1.jpeg">
+                        <img src="{{asset('assets/img/testi1.jpeg')}}">
                         <div id="image-caption">Nick Doe</div>
                     </div>
                 </div>
@@ -267,7 +267,7 @@
                         <p>If Shai Reznik's TDD videos don't convince you to add automated testing your code,
                             I don't know what will.This was the very best explanation of frameworks for brginners
                             that I've ever seen.</p>
-                        <img src="/assets/img/testi1.jpeg" class="img-fluid">
+                        <img src="{{asset('assets/img/testi1.jpeg')}}">
                         <div id="image-caption">Cromption Greves</div>
                     </div>
                 </div>
@@ -276,7 +276,7 @@
                         <p>If Shai Reznik's TDD videos don't convince you to add automated testing your code,
                             I don't know what will.This was the very best explanation of frameworks for brginners
                             that I've ever seen.</p>
-                        <img src="/assets/img/testi1.jpeg" class="img-fluid">
+                        <img src="{{asset('assets/img/testi1.jpeg')}}">
                         <div id="image-caption">Harry Mon</div>
                     </div>
                 </div>

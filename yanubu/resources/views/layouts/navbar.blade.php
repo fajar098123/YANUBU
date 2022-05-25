@@ -10,9 +10,8 @@
             <li><a class="nav-link scrollto active" href="/">Home</a></li>
             <li class="dropdown"><a href="#"><span>Profile</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
-                <li><a href="#">dropdown 1</a></li>
-                <li><a href="#">dropdown 2</a></li>
-                <li><a href="#">dropdown 3</a></li>
+                <li><a href="#">Sejarah, Visi & Misi</a></li>
+                <li><a href="#">Profil Pengurus</a></li>
               </ul>
             </li>
             <li><a class="nav-link scrollto" href="/fasilitas">Fasilitas</a></li>
