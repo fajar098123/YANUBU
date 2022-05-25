@@ -199,6 +199,16 @@
     <!-- Page level custom scripts -->
     <script src="{{asset('assetss/js/demo/chart-area-demo.js')}}"></script>
     <script src="{{asset('assetss/js/demo/chart-pie-demo.js')}}"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.12.0/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.0/js/dataTables.bootstrap4.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+    $('#example').DataTable();
+});
+    </script>
 
 </body>
 

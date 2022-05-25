@@ -12,4 +12,45 @@
   </nav> 
 <h1>Halaman Galeri</h1>
 
+<table id="example" class="table table-striped table-bordered" style="width:100%">
+<a href="/tambahproduk" class="btn btn-primary"><i class="fas fa-plus"></i>Tambah data</a>
+  <thead>
+      <tr>
+          <th>Name</th>
+          <th>Position</th>
+          <th>Office</th>
+          <th>Age</th>
+          <th>Start date</th>
+          <th>Salary</th>
+          <th>Action</th>
+
+
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Tiger Nixon</td>
+          <td>System Architect</td>
+          <td>Edinburgh</td>
+          <td>61</td>
+          <td>2011-04-25</td>
+          <td>$320,800</td>
+          <td>
+            <button type="button" class="btn btn-warning"><i class="fas fa-edit"></i></button>
+          <button type="button" class="btn btn-danger"><i class="fas fa-trash"></i></button>
+          </td>
+      </tr>
+  </tbody>
+  {{-- <tfoot>
+      <tr>
+          <th>Name</th>
+          <th>Position</th>
+          <th>Office</th>
+          <th>Age</th>
+          <th>Start date</th>
+          <th>Salary</th>
+      </tr>
+  </tfoot> --}}
+</table>
+
 @endsection
