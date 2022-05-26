@@ -24,15 +24,17 @@
             </tr>
         </thead>
         <tbody>
+            @foreach($dtDownload as $download)
             <tr>
-                <td>form_pendaftaran_2022.pdf</td>
-                <td>Formulir Pendaftaran  2022</td>
-                <td>formulir pendaftaran</td>
+                <td>{{ $download->file }}</td>
+                <td>{{ $download->nama }}</td>
+                <td>{{ $download->kategori }}</td>
                 <td>
                     <button type="button" class="btn btn-warning"><i class="fas fa-edit"></i></button>
                     <button type="button" class="btn btn-danger"><i class="fas fa-trash"></i></button>
                 </td>
             </tr>
+            @endforeach
         </tbody>
         {{-- <tfoot>
       <tr>

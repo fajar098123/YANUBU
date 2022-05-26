@@ -25,16 +25,18 @@
             </tr>
         </thead>
         <tbody>
+            @foreach($dtArtikel as $artikel)
             <tr>
-                <td>Test</td>
-                <td>Img</td>
-                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quaerat fuga quia. Officia dignissimos dicta doloremque, fugiat facilis aliquam sequi rem fuga, amet voluptas, corporis ipsum eligendi nisi officiis dolorem.</td>
-                <td>Fajar Nurbayu</td>
+                <td>{{ $artikel->judul }}</td>
+                <td>{{ $artikel->thumbnail }}</td>
+                <td>{{ $artikel->content }}</td>
+                <td>{{ $artikel->author }}</td>
                 <td>
                     <button type="button" class="btn btn-warning"><i class="fas fa-edit"></i></button>
                     <button type="button" class="btn btn-danger"><i class="fas fa-trash"></i></button>
                 </td>
             </tr>
+            @endforeach
         </tbody>
         {{-- <tfoot>
       <tr>
