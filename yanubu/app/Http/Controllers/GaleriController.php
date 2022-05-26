@@ -79,8 +79,10 @@ class GaleriController extends Controller
      * @param  \App\Models\Galeri  $galeri
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Galeri $galeri)
+    public function destroy($id)
     {
-        //
+        $galeri = Galeri::findorfail($id);
+        $galeri->delete();
+        return redirect()->route('galeriadmin')->with('success', 'Data Berhasil Dihapus');
     }
 }

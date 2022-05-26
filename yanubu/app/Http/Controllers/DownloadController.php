@@ -79,8 +79,10 @@ class DownloadController extends Controller
      * @param  \App\Models\Download  $download
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Download $download)
+    public function destroy($id)
     {
-        //
+        $download = Download::findorfail($id);
+        $download->delete();
+        return redirect()->route('downloadadmin')->with('success', 'Data Berhasil Dihapus');
     }
 }

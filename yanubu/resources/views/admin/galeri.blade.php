@@ -28,7 +28,7 @@
           <td>{{ $galeri->caption }}</td>
           <td>
             <button type="button" class="btn btn-warning"><i class="fas fa-edit"></i></button>
-          <button type="button" class="btn btn-danger"><i class="fas fa-trash"></i></button>
+            <a href="{{ url('deletegaleri', $galeri->id) }}" class="btn btn-danger">Hapus</a>
           </td>
       </tr>
       @endforeach

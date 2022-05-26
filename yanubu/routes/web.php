@@ -30,9 +30,16 @@ Route::get('/admin', function () {
 
 Route::view('/fasilitasadmin', 'admin.fasilitas');
 Route::view('/profiladmin', 'admin.profil');
+
 Route::get('/galeriadmin', 'App\Http\Controllers\GaleriController@index')->name('galeriadmin');
+Route::get('/deletegaleri/{id}', 'App\Http\Controllers\GaleriController@destroy')->name('deletegaleri');
+
 Route::get('/artikeladmin', 'App\Http\Controllers\artikelController@index')->name('artikeladmin');
+Route::get('/deleteartikel/{id}', 'App\Http\Controllers\artikelController@destroy')->name('deleteartikel');
+
 Route::get('/downloadadmin', 'App\Http\Controllers\DownloadController@index')->name('downloadadmin');
+Route::get('/deletedownload/{id}', 'App\Http\Controllers\DownloadController@destroy')->name('deletedownload');
+
 Route::view('/registrasiadmin', 'admin.registrasi');
 Route::view('/dataadmin', 'admin.dataadmin');
 Route::view('/addDownload', 'admin.adddownload');

@@ -79,8 +79,10 @@ class artikelController extends Controller
      * @param  \App\Models\Artikel  $artikel
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Artikel $artikel)
+    public function destroy($id)
     {
-        //
+        $artikel = Artikel::findorfail($id);
+        $artikel->delete();
+        return redirect()->route('artikeladmin')->with('success', 'Data Berhasil Dihapus');
     }
 }
