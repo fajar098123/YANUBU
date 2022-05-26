@@ -22,25 +22,17 @@
       </tr>
   </thead>
   <tbody>
+      @foreach($dtGaleri as $galeri)
       <tr>
-          <td>Img</td>
-          <td>Kegiatan Santri</td>
+          <td><a href="{{ asset($galeri->foto)}}" target="blank" rel="noopener noreferrer">Lihat Gambar</a></td>
+          <td>{{ $galeri->caption }}</td>
           <td>
             <button type="button" class="btn btn-warning"><i class="fas fa-edit"></i></button>
           <button type="button" class="btn btn-danger"><i class="fas fa-trash"></i></button>
           </td>
       </tr>
+      @endforeach
   </tbody>
-  {{-- <tfoot>
-      <tr>
-          <th>Name</th>
-          <th>Position</th>
-          <th>Office</th>
-          <th>Age</th>
-          <th>Start date</th>
-          <th>Salary</th>
-      </tr>
-  </tfoot> --}}
 </table>
 
 @endsection

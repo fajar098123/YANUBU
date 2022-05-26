@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GaleriController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,7 +31,7 @@ Route::get('/admin', function () {
 
 Route::view('/fasilitasadmin', 'admin.fasilitas');
 Route::view('/profiladmin', 'admin.profil');
-Route::view('/galeriadmin', 'admin.galeri');
+Route::get('/galeriadmin', 'App\Http\Controllers\GaleriController@index')->name('galeriadmin');
 Route::view('/artikeladmin', 'admin.artikel');
 Route::view('/downloadadmin', 'admin.download');
 Route::view('/registrasiadmin', 'admin.registrasi');
