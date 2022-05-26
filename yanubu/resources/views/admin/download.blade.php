@@ -14,10 +14,11 @@
     <h1>Halaman Download</h1>
 
     <table id="example" class="table table-striped table-bordered" style="width:100%">
-        <a href="/tambahproduk" class="btn btn-primary mb-2"><i class="fas fa-plus"></i>Tambah data</a>
+        <a href="/addDownload" class="btn btn-primary mb-2"><i class="fas fa-plus"></i>Tambah data</a>
         <thead>
             <tr>
                 <th>File</th>
+                <th>Nama</th>
                 <th>Kategori</th>
                 <th>Action</th>
             </tr>
@@ -25,6 +26,7 @@
         <tbody>
             <tr>
                 <td>form_pendaftaran_2022.pdf</td>
+                <td>Formulir Pendaftaran  2022</td>
                 <td>formulir pendaftaran</td>
                 <td>
                     <button type="button" class="btn btn-warning"><i class="fas fa-edit"></i></button>

@@ -35,3 +35,4 @@ Route::view('/artikeladmin', 'admin.artikel');
 Route::view('/downloadadmin', 'admin.download');
 Route::view('/registrasiadmin', 'admin.registrasi');
 Route::view('/dataadmin', 'admin.dataadmin');
+Route::view('/addDownload', 'admin.adddownload');
