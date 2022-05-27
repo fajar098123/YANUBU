@@ -213,7 +213,7 @@
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
     <script>
         $('#summernote').summernote({
-          placeholder: 'Hello Bootstrap 5',
+          placeholder: '',
           tabsize: 2,
           height: 100
         });
