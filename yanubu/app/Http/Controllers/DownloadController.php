@@ -25,7 +25,7 @@ class DownloadController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.adddownlaod');
     }
 
     /**
@@ -36,7 +36,18 @@ class DownloadController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $nm = $request->file;
+        $namaFile = "http://127.0.0.1:8000/files/" . $nm->getClientOriginalName();
+
+        $dtUpload = new download;
+        $dtUpload->file = $namaFile;
+        $dtUpload->nama = $request->nama;
+        $dtUpload->kategori = $request->kategori;
+
+        $nm->move(public_path() . '/files', $namaFile);
+        $dtUpload->save();
+
+        return redirect()->route('downloadadmin');
     }
 
     /**

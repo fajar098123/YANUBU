@@ -17,7 +17,7 @@ class Download extends Migration
             $table->id();
             $table->string('file', 100);
             $table->string('nama', 100);
-            $table->string('kategori', 100);
+            $table->integer('kategori');
             $table->timestamps();
         });
     }

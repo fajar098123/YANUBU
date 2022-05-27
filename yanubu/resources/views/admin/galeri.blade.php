@@ -13,7 +13,7 @@
 <h1>Halaman Galeri</h1>
 
 <table id="example" class="table table-striped table-bordered" style="width:100%">
-<a href="/tambahproduk" class="btn btn-primary mb-2"><i class="fas fa-plus"></i>Tambah data</a>
+<a href="/addGaleri" class="btn btn-primary mb-2"><i class="fas fa-plus"></i>Tambah data</a>
   <thead>
       <tr>
           <th>Foto</th>

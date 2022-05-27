@@ -39,9 +39,15 @@ Route::get('/deleteartikel/{id}', 'App\Http\Controllers\artikelController@destro
 
 Route::get('/downloadadmin', 'App\Http\Controllers\DownloadController@index')->name('downloadadmin');
 Route::get('/deletedownload/{id}', 'App\Http\Controllers\DownloadController@destroy')->name('deletedownload');
+Route::post('/simpandownload', 'App\Http\Controllers\DownloadController@store')->name('simpandownload');
 
 Route::view('/registrasiadmin', 'admin.registrasi');
 Route::view('/dataadmin', 'admin.dataadmin');
 Route::view('/addDownload', 'admin.adddownload');
 
 Route::view('/addArtikel', 'admin.addartikel');
+
+Route::view('/editDownload', 'admin.editdownload');
+
+Route::view('/addGaleri', 'admin.addgaleri');
+Route::view('/editGaleri', 'admin.editgaleri');

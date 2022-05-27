@@ -14,7 +14,7 @@
     <h1>Halaman Download</h1>
 
     <table id="example" class="table table-striped table-bordered" style="width:100%">
-        <a href="/addDownload" class="btn btn-primary mb-2"><i class="fas fa-plus"></i>Tambah data</a>
+        <a href={{ url('addDownload')}} class="btn btn-primary mb-2"><i class="fas fa-plus"></i>Tambah data</a>
         <thead>
             <tr>
                 <th>File</th>
@@ -30,8 +30,8 @@
                 <td>{{ $download->nama }}</td>
                 <td>{{ $download->kategori }}</td>
                 <td>
-                    <button type="button" class="btn btn-warning"><i class="fas fa-edit"></i></button>
-                    <a href="{{ url('deletedownload', $download->id) }}" class="btn btn-danger">Hapus</a>
+                    <a href="/editDownload" class="btn btn-warning"><i class="fas fa-edit"></i></a>
+                    <a href="{{ url('deletedownload', $download->id) }}" class="btn btn-danger"><i class="fas fa-trash"></i></a>
                 </td>
             </tr>
             @endforeach

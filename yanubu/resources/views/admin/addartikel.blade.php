@@ -31,7 +31,7 @@
                   <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
                 </div>
               </div>
-            
+
             <div class="form-group col-lg my-4">
                 <label for="file">Masukkan Konten</label>
                 <span class="required_notification text-danger">*</span>
@@ -39,8 +39,7 @@
             </div>
             <div class="form-group col-lg-6 my-4">
                 <label for="text">Author</label>
-                <span class="required_notification text-danger">*</span>
-                <input type="text" class="form-control" id="text" placeholder="nama author">
+                <input type="text" class="form-control" id="text" placeholder="nama author" disabled>
             </div>
             <div class="row">
                 <div class="col text-right">
