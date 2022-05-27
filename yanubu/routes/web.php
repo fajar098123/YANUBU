@@ -43,3 +43,5 @@ Route::get('/deletedownload/{id}', 'App\Http\Controllers\DownloadController@dest
 Route::view('/registrasiadmin', 'admin.registrasi');
 Route::view('/dataadmin', 'admin.dataadmin');
 Route::view('/addDownload', 'admin.adddownload');
+
+Route::view('/addArtikel', 'admin.addartikel');
