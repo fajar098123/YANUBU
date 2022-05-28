@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Artikel extends Migration
+class Profile extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class Artikel extends Migration
      */
     public function up()
     {
-        Schema::create('artikel', function (Blueprint $table) {
+        Schema::create('profile', function (Blueprint $table) {
             $table->id();
-            $table->string('judul', 100);
-            $table->string('thumbnail', 100);
-            $table->text('content');
-            $table->string('author', 100);
+            $table->string('nama', 100);
+            $table->string('jabatan', 100);
+            $table->string('foto', 100);
             $table->timestamps();
         });
     }
