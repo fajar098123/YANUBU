@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\DownloadController;
+use App\Http\Controllers\GaleriController;
+use App\Http\Controllers\artikelController;
 use Illuminate\Support\Facades\Route;
 
 /*
