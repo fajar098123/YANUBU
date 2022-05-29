@@ -10,7 +10,6 @@
             </li>
         </ol>
     </nav>
-    <h1>Halaman Data Admin</h1>
 
     <table id="example" class="table table-striped table-bordered" style="width:100%">
         <a href="/tambahproduk" class="btn btn-primary mb-2"><i class="fas fa-plus"></i>Tambah data</a>

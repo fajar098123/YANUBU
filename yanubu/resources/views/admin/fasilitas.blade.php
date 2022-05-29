@@ -10,10 +10,9 @@
             </li>
         </ol>
     </nav>
-    <h1>Halaman Fasilitas</h1>
 
     <table id="example" class="table table-striped table-bordered" style="width:100%">
-        <a href="/tambahproduk" class="btn btn-primary mb-2"><i class="fas fa-plus"></i>Tambah data</a>
+        <a href={{ url('addFasilitas')}} class="btn btn-primary mb-2"><i class="fas fa-plus"></i>Tambah data</a>
         <thead>
             <tr>
                 <th>Foto</th>

@@ -32,7 +32,7 @@ Route::get('/admin', function () {
 });
 
 Route::view('/fasilitasadmin', 'admin.fasilitas');
-Route::view('/profiladmin', 'admin.profil');
+Route::view('/profileadmin', 'admin.profile');
 
 Route::get('/galeriadmin', [GaleriController::class, 'index'])->name('galeriadmin');
 Route::get('/deletegaleri/{id}', [GaleriController::class, 'destroy'])->name('deletegaleri');
@@ -52,6 +52,12 @@ Route::view('/editArtikel', 'admin.editartikel');
 
 Route::view('/addGaleri', 'admin.addgaleri');
 Route::view('/editGaleri', 'admin.editgaleri');
+
+Route::view('/addFasilitas', 'admin.addfasilitas');
+Route::view('/editFasilitas', 'admin.editfasilitas');
+
+Route::view('/addProfile', 'admin.addprofile');
+Route::view('/editProfile', 'admin.editprofile');
 
 Route::view('/registrasiadmin', 'admin.registrasi');
 

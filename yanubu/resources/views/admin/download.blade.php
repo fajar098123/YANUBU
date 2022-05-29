@@ -11,8 +11,6 @@
         </ol>
     </nav>
 
-    <h1>Halaman Download</h1>
-
     <table id="example" class="table table-striped table-bordered" style="width:100%">
         <a href={{ url('addDownload')}} class="btn btn-primary mb-2"><i class="fas fa-plus"></i>Tambah data</a>
         <thead>

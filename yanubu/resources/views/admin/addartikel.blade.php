@@ -3,13 +3,10 @@
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item">
-                <a href="/admin">Admin</a>
+                <a href={{ url('admin')}}>Admin</a>
             </li>
             <li class="breadcrumb-item">
-                <a href="/downloadadmin">Artikel</a>
-            </li>
-            <li class="breadcrumb-item">
-                <a href="/adddownload">Tambah Artikel</a>
+                <a href={{ url('artikeladmin')}}>Artikel</a>
             </li>
         </ol>
     </nav>

@@ -12,7 +12,7 @@
     </nav>
 
     <table id="example" class="table table-striped table-bordered" style="width:100%">
-        <a href="/addArtikel" class="btn btn-primary mb-2"><i class="fas fa-plus"></i>Tambah data</a>
+        <a href={{ url('addArtikel')}} class="btn btn-primary mb-2"><i class="fas fa-plus"></i>Tambah data</a>
         <thead>
             <tr>
                 <th>Judul</th>
