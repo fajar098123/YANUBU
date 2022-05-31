@@ -23,7 +23,7 @@ Route::get('/', function () {
 Route::view('fasilitas', 'guest.fasilitas');
 Route::view('kontak', 'guest.kontak');
 Route::view('galeri', 'guest.galeri');
-Route::view('artikel', 'guest.artikel');
+Route::get('artikel', 'App\Http\Controllers\ArtikelController@artikel');
 
 
 // Route Admin

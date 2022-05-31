@@ -18,6 +18,12 @@ class artikelController extends Controller
         return view('admin.artikel', compact('dtArtikel'));
     }
 
+    public function artikel()
+    {
+        $dtArtikel = Artikel::all();
+        return view('guest.artikel', compact('dtArtikel'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -95,6 +101,6 @@ class artikelController extends Controller
     {
         $artikel = Artikel::findorfail($id);
         $artikel->delete();
-        return redirect()->route('artikeladmin')->with('success', 'Data Berhasil Dihapus');
+        return redirect('/artikeladmin');
     }
 }
