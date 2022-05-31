@@ -36,7 +36,17 @@ class GaleriController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $nm = $request->file('file');
+        $namaFile = "http://127.0.0.1:8000/img/" . $nm->getClientOriginalName();
+
+        $galeri = new Galeri();
+        $galeri->foto = $namaFile;
+        $galeri->caption = $request->caption;
+
+        $nm->move(public_path(). '/img', $namaFile);
+        $galeri->save();
+        
+        return redirect('galeriadmin');
     }
 
     /**

@@ -32,10 +32,12 @@ Route::get('/admin', function () {
 Route::view('/fasilitasadmin', 'admin.fasilitas');
 Route::view('/profiladmin', 'admin.profil');
 
-Route::get('/galeriadmin', [GaleriController::class, 'index'])->name('galeriadmin');
+Route::get('galeriadmin', 'App\Http\Controllers\GaleriController@index');
+Route::post("/savegaleri", 'App\Http\Controllers\GaleriController@store');
 Route::get('/deletegaleri/{id}', [GaleriController::class, 'destroy'])->name('deletegaleri');
 
-Route::get('/artikeladmin', [ArtikelController::class, 'index'])->name('artikeladmin');
+Route::get('/artikeladmin', 'App\Http\Controllers\ArtikelController@index');
+Route::post("/saveartikel", 'App\Http\Controllers\ArtikelController@store');
 Route::get('/deleteartikel/{id}', [ArtikelController::class, 'destroy'])->name('deleteartikel');
 
 Route::get('/downloadadmin', [DownloadController::class, 'index'])->name('downloadadmin');

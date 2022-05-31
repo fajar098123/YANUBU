@@ -25,7 +25,7 @@ class artikelController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -36,7 +36,19 @@ class artikelController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $nm = $request->file('thumbnail');
+        $namaFile = "http://127.0.0.1:8000/img/" . $nm->getClientOriginalName();
+
+        $artikel = new Artikel();
+        $artikel->judul = $request->judul;
+        $artikel->thumbnail = $namaFile;
+        $artikel->content = $request->content;
+        $artikel->author = $request->author;
+
+        $nm->move(public_path(). '/img', $namaFile);
+        $artikel->save();
+
+        return redirect('/artikeladmin');
     }
 
     /**
