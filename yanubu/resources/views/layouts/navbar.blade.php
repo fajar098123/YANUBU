@@ -11,7 +11,7 @@
             <li class="dropdown"><a href="#"><span>Profile</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
                 <li><a href={{ url('sejarah-visi-misi') }}>Sejarah, Visi & Misi</a></li>
-                <li><a href="#">Profil Pengurus</a></li>
+                <li><a href="/profilpengurus">Profil Pengurus</a></li>
               </ul>
             </li>
             <li><a class="nav-link scrollto" href="/fasilitas">Fasilitas</a></li>

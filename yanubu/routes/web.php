@@ -26,6 +26,8 @@ Route::view('/galeri', 'guest.galeri');
 Route::view('/artikel', 'guest.artikel');
 Route::get('/artikel', 'App\Http\Controllers\ArtikelController@artikel');
 Route::view('/sejarah-visi-misi', 'guest.profileSejarah');
+Route::view('/profilpengurus', 'guest.profilpengurus');
+
 
 // Route Admin
 Route::get('/admin', function () {
