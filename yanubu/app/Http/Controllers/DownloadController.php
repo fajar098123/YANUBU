@@ -36,7 +36,7 @@ class DownloadController extends Controller
      */
     public function store(Request $request)
     {
-        $nm = $request->file;
+        $nm = $request->file('file');
         $namaFile = "http://127.0.0.1:8000/files/" . $nm->getClientOriginalName();
 
         $dtUpload = new download;
