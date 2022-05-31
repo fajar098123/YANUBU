@@ -31,7 +31,7 @@ class artikelController extends Controller
      */
     public function create()
     {
-        
+
     }
 
     /**

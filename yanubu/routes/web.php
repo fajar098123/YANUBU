@@ -20,11 +20,12 @@ Route::get('/', function () {
     return view('guest.home');
 });
 
-Route::view('fasilitas', 'guest.fasilitas');
-Route::view('kontak', 'guest.kontak');
-Route::view('galeri', 'guest.galeri');
-Route::get('artikel', 'App\Http\Controllers\ArtikelController@artikel');
-
+Route::view('/fasilitas', 'guest.fasilitas');
+Route::view('/kontak', 'guest.kontak');
+Route::view('/galeri', 'guest.galeri');
+Route::view('/artikel', 'guest.artikel');
+Route::get('/artikel', 'App\Http\Controllers\ArtikelController@artikel');
+Route::view('/sejarah-visi-misi', 'guest.profileSejarah');
 
 // Route Admin
 Route::get('/admin', function () {

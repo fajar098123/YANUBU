@@ -27,7 +27,7 @@
             <tr>
                 <td>{{ $artikel->judul }}</td>
                 <td>{{ $artikel->thumbnail }}</td>
-                <td>{{ $artikel->content }}</td>
+                <td>{{ Str::limit($artikel->content, 100, '...') }}</td>
                 <td>{{ $artikel->author }}</td>
                 <td>
                     <button type="button" class="btn btn-warning"><i class="fas fa-edit"></i></button>

@@ -3,14 +3,14 @@
     <header id="header" class="fixed-top ">
       <div class="container d-flex align-items-center">
 
-        <h1 class="logo me-auto"><a href="/"><img src="assets/img/yanubu.png" alt="" class="img-fluid" /></a></h1>
+        <h1 class="logo me-auto"><a href="/"><img src={{ asset('assets/img/yanubu.png') }} alt="" class="img-fluid" /></a></h1>
 
         <nav id="navbar" class="navbar">
           <ul>
             <li><a class="nav-link scrollto active" href="/">Home</a></li>
             <li class="dropdown"><a href="#"><span>Profile</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
-                <li><a href="#">Sejarah, Visi & Misi</a></li>
+                <li><a href={{ url('sejarah-visi-misi') }}>Sejarah, Visi & Misi</a></li>
                 <li><a href="#">Profil Pengurus</a></li>
               </ul>
             </li>
