@@ -3,15 +3,13 @@
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item">
-                <a href="/admin">Admin</a>
+                <a href={{ url('admin')}}>Admin</a>
             </li>
             <li class="breadcrumb-item">
-                <a href="/downloadadmin">Download</a>
+                <a href={{ url('downloadadmin')}}>Download</a>
             </li>
         </ol>
     </nav>
-
-    <h1>Halaman Download</h1>
 
     <table id="example" class="table table-striped table-bordered" style="width:100%">
         <a href={{ url('addDownload')}} class="btn btn-primary mb-2"><i class="fas fa-plus"></i>Tambah data</a>

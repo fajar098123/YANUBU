@@ -52,9 +52,9 @@
                     <span>Dashboard</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/profiladmin">
+                <a class="nav-link" href="/profileadmin">
                     <i class="fas fa-fw fa-user"></i>
-                    <span>Profil</span></a>
+                    <span>Profile</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/fasilitasadmin">
@@ -95,7 +95,7 @@
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
 
-        
+
         </ul>
         <!-- End of Sidebar -->
 
@@ -218,7 +218,7 @@
           height: 100
         });
       </script>
-      
+
 
 
 

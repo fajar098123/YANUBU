@@ -3,10 +3,10 @@
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item">
-                <a href="/admin">Admin</a>
+                <a href={{ url('admin')}}>Admin</a>
             </li>
             <li class="breadcrumb-item">
-                <a href="/downloadadmin">Download</a>
+                <a href={{ url('downloadadmin')}}>Download</a>
             </li>
         </ol>
     </nav>
@@ -14,7 +14,10 @@
         <form>
             <div class="form-group col-lg-6 my-4">
                 <label for="file">Masukkan File</label>
-                <input type="file" class="form-control-file" id="file">
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="file">
+                    <label class="custom-file-label" for="file">Choose file</label>
+                </div>
             </div>
             <div class="form-group col-lg-6 my-4">
                 <label for="text">Nama File</label>

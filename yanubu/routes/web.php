@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\DownloadController;
+use App\Http\Controllers\GaleriController;
+use App\Http\Controllers\artikelController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,7 +32,7 @@ Route::get('/admin', function () {
 });
 
 Route::view('/fasilitasadmin', 'admin.fasilitas');
-Route::view('/profiladmin', 'admin.profil');
+Route::view('/profileadmin', 'admin.profile');
 
 Route::get('galeriadmin', 'App\Http\Controllers\GaleriController@index');
 Route::post("/savegaleri", 'App\Http\Controllers\GaleriController@store');
@@ -44,13 +46,21 @@ Route::get('/downloadadmin', [DownloadController::class, 'index'])->name('downlo
 Route::get('/deletedownload/{id}', [DownloadController::class, 'destroy'])->name('deletedownload');
 Route::post('/simpandownload', [DownloadController::class, 'store'])->name('simpandownload');
 
-Route::view('/registrasiadmin', 'admin.registrasi');
-Route::view('/dataadmin', 'admin.dataadmin');
 Route::view('/addDownload', 'admin.adddownload');
+Route::view('/editDownload', 'admin.editdownload');
 
 Route::view('/addArtikel', 'admin.addartikel');
-
-Route::view('/editDownload', 'admin.editdownload');
+Route::view('/editArtikel', 'admin.editartikel');
 
 Route::view('/addGaleri', 'admin.addgaleri');
 Route::view('/editGaleri', 'admin.editgaleri');
+
+Route::view('/addFasilitas', 'admin.addfasilitas');
+Route::view('/editFasilitas', 'admin.editfasilitas');
+
+Route::view('/addProfile', 'admin.addprofile');
+Route::view('/editProfile', 'admin.editprofile');
+
+Route::view('/registrasiadmin', 'admin.registrasi');
+
+Route::view('/dataadmin', 'admin.dataadmin');

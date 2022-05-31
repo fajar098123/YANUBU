@@ -3,16 +3,16 @@
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item">
-                <a href="/admin">Admin</a>
+                <a href={{ url('admin')}}>Admin</a>
             </li>
             <li class="breadcrumb-item">
-                <a href="/artikeladmin">Artikel</a>
+                <a href={{ url('artikeladmin')}}>Artikel</a>
             </li>
         </ol>
     </nav>
 
     <table id="example" class="table table-striped table-bordered" style="width:100%">
-        <a href="/addArtikel" class="btn btn-primary mb-2"><i class="fas fa-plus"></i>Tambah data</a>
+        <a href={{ url('addArtikel')}} class="btn btn-primary mb-2"><i class="fas fa-plus"></i>Tambah data</a>
         <thead>
             <tr>
                 <th>Judul</th>
