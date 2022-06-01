@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Models;
+use Illuminate\Database\Eloquent\Model;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -40,5 +41,14 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
+    ];
+}
+
+class Users extends Model
+{
+    protected $table = "users";
+    protected $primaryKey = "id";
+    protected $fillable = [
+        'name', 'email'
     ];
 }

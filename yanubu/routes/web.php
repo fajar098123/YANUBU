@@ -5,6 +5,7 @@ use App\Http\Controllers\GaleriController;
 use App\Http\Controllers\artikelController;
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,6 +34,7 @@ Route::view('/profilpengurus', 'guest.profilpengurus');
 Route::get('/login', function() {
     return view('layouts.login');
 });
+Route::post('/postlogin', 'App\Http\Controllers\LoginController@postlogin')->name('postlogin');
 
 // Route Admin
 Route::get('/admin', function () {
