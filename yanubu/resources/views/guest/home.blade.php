@@ -10,11 +10,11 @@
                 <h1>Selamat Datang</h1>
                 <h2 class="col-lg-5 d-flex flex-column">di Website <span>Yayasan Nurul Burhan</span> Bondowoso</h2>
                 <div class="d-flex justify-content-center">
-                    <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-sosmed"><i
+                    <a href="https://www.instagram.com/yayasan_nurul_burhan/" target="_blank" class="btn-sosmed"><i
                             class="bx bxl-instagram-alt"></i><span>yayasan_nurul_burhan</span></a>
-                    <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-sosmed"><i
+                    <a href="https://www.youtube.com/c/YayasanNurulBurhan" class="btn-sosmed"><i
                             class='bx bxl-youtube'></i><span>Yayasan Nurul Burhan</span></a>
-                    <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-sosmed"><i
+                    <a href="https://www.facebook.com/yayasan.nurulburhan" class="btn-sosmed"><i
                             class='bx bxl-facebook-square'></i><span>Yayasan Nurul Burhan</span></a>
                 </div>
             </div>

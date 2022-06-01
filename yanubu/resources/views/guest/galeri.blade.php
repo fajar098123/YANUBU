@@ -17,61 +17,18 @@
                     </div>
                 </div>
             </section>
-
     <div class="container gallery-container">
-
             <div class="row">
-
+                @foreach ($dtGaleri as $galeri)
                 <div class="col-sm-12 col-md-4">
-                    <a class="lightbox" href="{{asset('assets/img/bridge.jpg')}}">
-                        <img src="{{asset('assets/img/bridge.jpg')}}" alt="Bridge">
+                    <a class="lightbox" href="{{ asset($galeri->foto) }}">
+                        <img src="{{ asset($galeri->foto) }}" alt="{{ $galeri->caption }}">
                     </a>
+                    <p class="page-description">{{ $galeri->caption }}</p>
                 </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="{{asset('assets/img/park.jpg')}}">
-                        <img src="{{asset('assets/img/park.jpg')}}" alt="Park">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="{{asset('assets/img/tunnel.jpg')}}">
-                        <img src="{{asset('assets/img/tunnel.jpg')}}" alt="Tunnel">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="{{asset('assets/img/traffic.jpg')}}">
-                        <img src="{{asset('assets/img/traffic.jpg')}}" alt="Traffic">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="{{asset('assets/img/traffic.jpg')}}">
-                        <img src="{{asset('assets/img/traffic.jpg')}}" alt="Coast">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="{{asset('assets/img/traffic.jpg')}}">
-                        <img src="{{asset('assets/img/traffic.jpg')}}" alt="Rails">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="{{asset('assets/img/traffic.jpg')}}">
-                        <img src="{{asset('assets/img/traffic.jpg')}}" alt="Traffic">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="{{asset('assets/img/traffic.jpg')}}">
-                        <img src="{{asset('assets/img/traffic.jpg')}}" alt="Coast">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="{{asset('assets/img/traffic.jpg')}}">
-                        <img src="{{asset('assets/img/traffic.jpg')}}" alt="Rails">
-                    </a>
-                </div>
-
+                @endforeach
             </div>
-
         </div>
-
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
     <script> baguetteBox.run('.tz-gallery'); </script>
