@@ -13,9 +13,7 @@
 
     <!-- Custom fonts for this template-->
     <link href="{{asset('assetss/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="{{asset('assetss/css/sb-admin-2.min.css')}}" rel="stylesheet">
@@ -41,18 +39,19 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                                     </div>
-                                    <form action="{{ route('postlogin')}}" method="post">
-                                        {{ csrf_field() }}
+                                    <form action="{{ route('postlogin') }}" method="post">
+                                        @csrf
                                         <div class="form-group">
-                                            <input type="email" name="email" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Enter Email Address...">
+                                            <label>Email</label>
+                                            <input type="email" name="email" class="form-control" placeholder="Email" required="">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" name="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password">
+                                            <label>Password</label>
+                                            <input type="password" name="password" class="form-control" placeholder="Password" required="">
                                         </div>
-                                        <button type="submit" class="btn btn-dark btn-block">Sign In</button>
+                                        <button type="submit" class="btn btn-primary btn-block">Log In</button>
+                                        <hr>
+                                        <p class="text-center">Belum punya akun? <a href="#">Register</a> sekarang!</p>
                                     </form>
                                 </div>
                             </div>

@@ -3,6 +3,8 @@
 use App\Http\Controllers\DownloadController;
 use App\Http\Controllers\GaleriController;
 use App\Http\Controllers\artikelController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -34,12 +36,12 @@ Route::view('/profilpengurus', 'guest.profilpengurus');
 Route::get('/login', function() {
     return view('layouts.login');
 });
+Route::get('/logout', 'App\Http\Controllers\LoginController@logout')->name('logout');
 Route::post('/postlogin', 'App\Http\Controllers\LoginController@postlogin')->name('postlogin');
 
 // Route Admin
-Route::get('/admin', function () {
-    return view('admin.dashboard');
-});
+
+Route::get('/admin', [AdminController::class, 'index'])->name('admin')->middleware('auth');
 
 Route::view('/fasilitasadmin', 'admin.fasilitas');
 Route::view('/profileadmin', 'admin.profile');
@@ -74,3 +76,4 @@ Route::view('/editProfile', 'admin.editprofile');
 Route::view('/registrasiadmin', 'admin.registrasi');
 
 Route::view('/dataadmin', 'admin.dataadmin');
+
