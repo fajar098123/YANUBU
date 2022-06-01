@@ -18,6 +18,12 @@ class GaleriController extends Controller
         return view('admin.galeri', compact('dtGaleri'));
     }
 
+    public function galeri()
+    {
+        $dtGaleri = Galeri::all();
+        return view('guest.galeri', compact('dtGaleri'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -45,7 +51,7 @@ class GaleriController extends Controller
 
         $nm->move(public_path(). '/img', $namaFile);
         $galeri->save();
-        
+
         return redirect('galeriadmin');
     }
 

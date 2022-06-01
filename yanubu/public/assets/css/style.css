@@ -84,9 +84,10 @@ body {
 
 .gallery-container p.page-description {
   text-align: center;
-  margin: 25px auto;
-  font-size: 18px;
-  color: #999;
+  margin: 15px auto;
+  font-size: 14px;
+  font-weight: 600;
+  color: #03750D;
 }
 
 .tz-gallery {
@@ -99,7 +100,9 @@ body {
 }
 
 .tz-gallery .lightbox img {
-  width: 100%;
+  background-size: contain, cover;
+  width: 340px;
+  height: 240px;
   border-radius: 0;
   position: relative;
   -webkit-box-shadow: 2px 4px 4px 3px rgba(0,0,0,0.24);
@@ -161,7 +164,7 @@ body {
 
 .title-section1 h1::before {
   /* Highlight color */
-  background-color: #6ACC1A;
+  background-color: #03750D;
 
   content: "";
   position: absolute;
