@@ -94,6 +94,6 @@ class DownloadController extends Controller
     {
         $download = Download::findorfail($id);
         $download->delete();
-        return redirect()->route('downloadadmin')->with('success', 'Data Berhasil Dihapus');
+        return redirect('/downloadadmin');
     }
 }

@@ -872,6 +872,97 @@ body {
     }
   }
 
+  /*--------------------------------------------------------------
+  # Detail Artikel Section
+  --------------------------------------------------------------*/
+
+  @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700");
+  @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+  body {
+    font-family: Lato, sans-serif;
+  }
+
+  .container-artikel {
+    display: grid;
+    grid-template-columns: 4rem 3fr 1fr 2rem;
+    margin-top: 2rem;
+    grid-column-gap: 2rem;
+  }
+
+  .judul-artikel {
+    grid-column: 2 / 5;
+  }
+
+  .heading {
+    font-family: Montserrat, sans-serif;
+  }
+
+  .judul-artikel .penulis {
+    letter-spacing: 0.1rem;
+    font-size: smaller;
+    color: #455A64;
+  }
+
+  .content-artikel {
+    grid-column: 2 / 3;
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  .content-artikel .poster-image {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .aside .heading {
+    margin: 0;
+    font-weight: 600;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    .container-artikel {
+      grid-template-columns: 2rem 3fr 1fr 2rem;
+    }
+    .content-artikel {
+      grid-column: 2 / 4;
+    }
+    .aside {
+      grid-column: 2 / 4;
+    }
+  }
+
+  .card-artikel {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    margin: 1rem 0;
+    cursor: pointer;
+  }
+
+  .card-artikel img {
+    height: 100%;
+    width: 40%;
+    margin-right: 0.5rem;
+  }
+
+  .card-artikel p {
+    margin: 0;
+  }
+
+  .card-artikel .title {
+    font-size: 0.8rem;
+  }
+
+  .card-artikel .author {
+    font-size: small;
+  }
+
+
+
     /*--------------------------------------------------------------
   # Gallery Section
   --------------------------------------------------------------*/

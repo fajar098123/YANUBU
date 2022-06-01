@@ -99,6 +99,6 @@ class GaleriController extends Controller
     {
         $galeri = Galeri::findorfail($id);
         $galeri->delete();
-        return redirect()->route('galeriadmin')->with('success', 'Data Berhasil Dihapus');
+        return redirect('/galeriadmin');
     }
 }
