@@ -29,6 +29,7 @@ Route::get('/galeri', 'App\Http\Controllers\GaleriController@galeri');
 Route::get('/artikel', 'App\Http\Controllers\ArtikelController@artikel');
 Route::view('/sejarah-visi-misi', 'guest.profileSejarah');
 Route::view('/profilpengurus', 'guest.profilpengurus');
+Route::view('/detail-artikel', 'guest.detailartikel');
 
 
 Route::get('/login', function() {
