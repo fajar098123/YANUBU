@@ -18,7 +18,7 @@
             <div>
                 <h1>{{ $artikel->judul }}</h1>
                 <p>{{ Str::limit($artikel->content, 75, '...') }}</p>
-                <div class="date">6 Oct 2017</div>
+                <div class="date">{{ Str::limit($artikel->updated_at, 10,' ') }}</div>
                 <div class="tags">
                     <div class="tag">{{ $artikel->author }}</div>
                 </div>

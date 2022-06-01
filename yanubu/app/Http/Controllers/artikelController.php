@@ -24,6 +24,12 @@ class artikelController extends Controller
         return view('guest.artikel', compact('dtArtikel'));
     }
 
+    public function reccentartikel()
+    {
+        $dtArtikel = Artikel::latest()->take(4)->get();
+        return view('guest.home', compact('dtArtikel'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *

@@ -24,6 +24,12 @@ class GaleriController extends Controller
         return view('guest.galeri', compact('dtGaleri'));
     }
 
+    public function reccentgaleri()
+    {
+        $dtGaleri = Galeri::latest()->take(3)->get();
+        return view('guest.reccentgaleri', compact('dtGaleri'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *

@@ -15,7 +15,7 @@
   Diam quam nulla porttitor massa id neque aliquam. Pharetra convallis posuere morbi leo urna molestie. Venenatis cras sed felis eget velit aliquet. In nulla posuere sollicitudin aliquam ultrices sagittis. Eget nulla facilisi etiam dignissim diam. Commodo sed egestas egestas fringilla phasellus. Etiam erat velit scelerisque in dictum non consectetur a erat. Pretium aenean pharetra magna ac. Mattis nunc sed blandit libero. Quam id leo in vitae turpis massa sed elementum. Sem viverra aliquet eget sit amet. Neque aliquam vestibulum morbi blandit cursus risus at ultrices mi. Felis donec et odio pellentesque diam. Convallis posuere morbi leo urna molestie at elementum eu. Tincidunt ornare massa eget egestas purus viverra. Id faucibus nisl tincidunt eget. Quisque id diam vel quam elementum pulvinar. Aliquam purus sit amet luctus venenatis lectus magna. Diam donec adipiscing tristique risus.</p>
     </section>
     <aside class="aside">
-      <h4 class="heading">Other Articles you might Enjoy</h4>
+      <h4 class="heading">Reccent Posts</h4>
       <div class="card-artikel">
         <img src='https://images.unsplash.com/photo-1457269315919-3cfc794943cd?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=2c42c1cac3092204f4c1afdca4d44e99' alt=''>
         <div>

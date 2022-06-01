@@ -971,7 +971,7 @@ body {
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2.5rem;
     padding: 4em 4rem;
     margin: 0 auto;
@@ -980,10 +980,10 @@ body {
 
   .card-gallery {
     font-family: 'Heebo';
-    --bg-filter-opacity: 0.2;
+    --bg-filter-opacity: 0.4;
     background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
-    height: 12em;
-    width: 10em;
+    height: 240px;
+    width: 345px;
     font-size: 1.5em;
     color: white;
     padding: 1em;

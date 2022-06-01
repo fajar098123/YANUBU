@@ -25,7 +25,7 @@
 
     <!-- ======= Profile Section ======= -->
 
-    <section class="wrapper">
+    {{-- <section class="wrapper">
         <div class="container">
 
             <div class="row">
@@ -99,7 +99,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <!-- ======= Blog Section ======= -->
 
@@ -110,7 +110,7 @@
                     <h1>ARTIKEL</h1>
                 </div>
                 <div class="read-more d-flex align-items-center">
-                    <a class="btn-read-more" href="#">
+                    <a class="btn-read-more" href="{{ url('/artikel')}}">
                         <h5 class="d-inline">Baca Selengkapnya</h5>
                         <i class='bx bxs-chevron-right bx-xs'></i>
                     </a>
@@ -120,54 +120,20 @@
     </section>
 
     <section class="cards-wrapper-blog">
+        @foreach($dtArtikel as $artikel)
         <div class="card-grid-space">
-            <a class="card-blog" href="#" style="--bg-img: url({{asset('assets/img/img1.png')}})">
+            <a class="card-blog" href="#" style="--bg-img: url('{{ $artikel->thumbnail }}')">
                 <div>
-                    <h1>HTML Syntax</h1>
-                    <p>The syntax of a language is how it works. How to actually write it. Learn HTML syntax…</p>
-                    <div class="date">6 Oct 2017</div>
+                    <h1>{{ $artikel->judul }}</h1>
+                    <p>{{ Str::limit($artikel->content, 75, '...') }}</p>
+                    <div class="date">{{ Str::limit($artikel->updated_at, 10,' ') }}</div>
                     <div class="tags">
-                        <div class="tag">HTML</div>
+                        <div class="tag">{{ $artikel->author }}</div>
                     </div>
                 </div>
             </a>
         </div>
-        <div class="card-grid-space">
-            <a class="card-blog" href="#" style="--bg-img: url({{asset('assets/img/img2.png')}})">
-                <div>
-                    <h1>Basic types of HTML tags</h1>
-                    <p>Learn about some of the most common HTML tags…</p>
-                    <div class="date">9 Oct 2017</div>
-                    <div class="tags">
-                        <div class="tag">HTML</div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="card-grid-space">
-            <a class="card-blog" href="#" style="--bg-img: url({{asset('assets/img/img3.png')}})">
-                <div>
-                    <h1>Links, images and about file paths</h1>
-                    <p>Learn how to use links and images along with file paths…</p>
-                    <div class="date">14 Oct 2017</div>
-                    <div class="tags">
-                        <div class="tag">HTML</div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="card-grid-space">
-            <a class="card-blog" href="#" style="--bg-img: url({{asset('assets/img/img4.png')}})">
-                <div>
-                    <h1>Basic types of HTML tags</h1>
-                    <p>Learn about some of the most common HTML tags…</p>
-                    <div class="date">9 Oct 2017</div>
-                    <div class="tags">
-                        <div class="tag">HTML</div>
-                    </div>
-                </div>
-            </a>
-        </div>
+        @endforeach
     </section>
 
     <!-- ======= Gallery Section ======= -->
@@ -179,7 +145,7 @@
                     <h1>GALERI</h1>
                 </div>
                 <div class="read-more d-flex align-items-center">
-                    <a class="btn-read-more" href="#">
+                    <a class="btn-read-more" href="{{ url('/galeri')}}">
                         <h5 class="d-inline">Lihat Selengkapnya</h5>
                         <i class='bx bxs-chevron-right bx-xs'></i>
                     </a>
@@ -189,17 +155,19 @@
     </section>
 
     <section class="cards-wrapper-gallery">
+        {{-- @foreach ($dtGaleri as $galeri)
         <div class="card-grid-space">
-            <a class="card-gallery" href="#" style="--bg-img: url({{asset('assets/img/img1.png')}})">
+            <a class="card-gallery" href="{{ asset($galeri->foto) }}" target="_blank" style="--bg-img: url({{ asset($galeri->foto) }})">
                 <div>
-                    <h6>HTML Syntax</h6>
+                    <h6>{{ $galeri->caption }}</h6>
                 </div>
             </a>
         </div>
+        @endforeach --}}
         <div class="card-grid-space">
-            <a class="card-gallery" href="#" style="--bg-img: url({{asset('assets/img/img2.png')}})">
+            <a class="card-gallery" href="#" style="--bg-img: url({{asset('assets/img/img3.png')}})">
                 <div>
-                    <h6>Basic types of HTML tags</h6>
+                    <h6>Links, images and about file paths</h6>
                 </div>
             </a>
         </div>
@@ -210,14 +178,9 @@
                 </div>
             </a>
         </div>
-        <div class="card-grid-space">
-            <a class="card-gallery" href="#" style="--bg-img: url({{asset('assets/img/img4.png')}})">
-                <div>
-                    <h6>Basic types of HTML tags</h6>
-                </div>
-            </a>
-        </div>
     </section>
+
+    <!-- ======= Youtube Section ======= -->
 
     <section id="youtube">
         <div class="container">
