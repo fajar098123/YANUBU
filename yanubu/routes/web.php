@@ -30,6 +30,10 @@ Route::view('/sejarah-visi-misi', 'guest.profileSejarah');
 Route::view('/profilpengurus', 'guest.profilpengurus');
 
 
+Route::get('/login', function() {
+    return view('layouts.login');
+});
+
 // Route Admin
 Route::get('/admin', function () {
     return view('admin.dashboard');
